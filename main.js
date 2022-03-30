@@ -24,6 +24,11 @@ function operate (operator, num1, num2) {
 
 }
 
+//display
+displayValue = 0
+
+let display = document.querySelector(".display-port");
+display.textContent= displayValue
 
 //Buttons
 let button0 = document.querySelector(".number-zero");
@@ -43,3 +48,22 @@ let multiplyButton = document.querySelector (".multiply")
 let divideButton = document.querySelector (".divide")
  
 let onButton = document.querySelector (".on-button")
+
+
+
+//onclicks
+button0.addEventListener("click", function () {
+    if (display.textContent == 0) {
+        return 0
+    }else
+    display.textContent += "0"
+}
+)
+
+button1.addEventListener("click", function () {
+    if (display.textContent == 0) {
+        display.textContent = 1;
+    }else 
+    display.textContent += "1"
+}
+ )
